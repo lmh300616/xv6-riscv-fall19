@@ -37,8 +37,10 @@ primes() {
     }
     if (len <= 0 || p <= 0) {
       close(1);
+      wait();
       exit();
     }
+    wait();
   } 
 }
 
